@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Privacy · Otis</title>
+<meta name="description" content="How Otis handles your information: it runs on your computer, uses the AI engine and apps you connect, and has no servers of its own that see your data.">
+<link rel="icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root {
+  --bg: #faf6f0; --surface: #fffdf9; --fg: #10162e; --muted: #59617a; --line: rgb(16 22 46 / .1); --blue: #2563eb;
+  --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --body: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root { --bg: #0a0f20; --surface: #11182e; --fg: #eef1f8; --muted: #a1aac2; --line: rgb(238 241 248 / .1); --blue: #6b9bff; color-scheme: dark; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.65; }
+.wrap { width: min(46rem, 100%); margin: 0 auto; padding: 0 max(20px, env(safe-area-inset-left)); }
+nav { border-bottom: 1px solid var(--line); }
+nav .wrap { display: flex; align-items: center; height: 64px; }
+.logo { display: flex; align-items: center; gap: .55rem; font-family: var(--display); font-weight: 800; font-size: 1.35rem; text-decoration: none; color: inherit; }
+.logo img { width: 34px; height: 34px; }
+main { padding-block: 3rem 5rem; }
+h1, h2 { font-family: var(--display); line-height: 1.1; letter-spacing: -.02em; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); margin: .3rem 0 1rem; }
+h2 { font-size: 1.35rem; margin: 2.4rem 0 .5rem; }
+p, li { color: var(--muted); }
+strong { color: var(--fg); }
+a { color: var(--blue); }
+.eyebrow { font-family: var(--mono); font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--blue); }
+footer { border-top: 1px solid var(--line); padding-block: 2rem; color: var(--muted); font-size: .9rem; }
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="./"><img src="assets/otis-icon.png" alt="">Otis</a></div></nav>
+<main class="wrap">
+  <p class="eyebrow">Privacy policy · Updated 6 November 2026</p>
+  <h1>Your information stays yours.</h1>
+  <p>Otis is a desktop app that runs on your own computer. This page explains what it uses, where that goes, and what stays with you. It applies to the Otis app (early access) and this website.</p>
+
+  <h2>The short version</h2>
+  <ul>
+    <li><strong>Otis has no servers of its own that see your data.</strong> Your chats, files and settings are stored on your computer.</li>
+    <li><strong>Answers come from the AI engine you choose</strong> (Claude Code from Anthropic, or Codex from OpenAI), under your own account with them.</li>
+    <li><strong>Apps you connect</strong> (calendar, email, chat, tasks) are reached directly from your computer, with your own sign-ins.</li>
+    <li><strong>Nothing is sent, changed or deleted without your OK</strong>, unless you choose to allow that kind of action.</li>
+    <li>No advertising, no selling of data, and no analytics in the app.</li>
+  </ul>
+
+  <h2>What stays on your computer</h2>
+  <p>Your conversations with Otis, the documents it saves in your Otis folder, your skills, workflows and permission choices, and the list of apps you've connected. Access tokens you give Otis for connected apps are kept on your computer and are never shown back in the app. The app's pairing credentials are kept in your system's secure credential store.</p>
+
+  <h2>What goes to your AI engine</h2>
+  <p>To answer a request, Otis passes your message, recent messages from the same chat, and the information it reads to do the task (for example, a calendar event or an email) to the AI engine you connected. That engine runs under your account with Anthropic or OpenAI, and their terms and privacy policies apply to what they receive. You can change or disconnect the engine at any time in Settings → AI engine.</p>
+
+  <h2>Connected apps</h2>
+  <p>When you turn on a connector, Otis can read from that app when a task needs it, and asks you before sending, changing or deleting anything there (unless you allow that action in Settings → Permissions). Turn a connector off, or remove it, to stop access. The sample workplace is made-up data and never leaves your computer; “sent” sample emails are saved in your Otis folder.</p>
+
+  <h2>Updates and downloads</h2>
+  <p>Installers are downloaded from this website, which is hosted on GitHub Pages. When automatic updates are switched on, the app checks GitHub for a newer version; that request includes your app version and platform, as any download does. GitHub may log your IP address when you visit or download, under GitHub's privacy statement.</p>
+
+  <h2>This website</h2>
+  <p>This site doesn't use cookies, analytics or trackers. It loads fonts from Google Fonts, which receives your IP address to deliver them. If you request an invite or send pilot feedback, the details you type in the form (such as your name, email and answers) are sent to the Otis team by email through a form-forwarding service (Web3Forms or FormSubmit). We use them only to run the pilot and to contact you about Otis, and you can ask us to delete them at any time.</p>
+
+  <h2>Children</h2>
+  <p>Otis is not meant for children under 13, and is subject to the age requirements of the AI engine you connect.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, we'll update it here and change the date at the top.</p>
+
+  <h2>Questions</h2>
+  <p id="ask">Ask a question or report a concern on <a href="https://github.com/bmorris-code/Otis/issues">the Otis GitHub page</a>.</p>
+</main>
+<footer><div class="wrap"><a href="./">← Back to Otis</a></div></footer>
+<script>
+  // Same address as on the home page; leave empty to point people to GitHub.
+  const CONTACT_EMAIL = "branwinne@gmail.com";
+  if (CONTACT_EMAIL) document.getElementById("ask").innerHTML = `Email <a href="mailto:${CONTACT_EMAIL}">${CONTACT_EMAIL}</a>.`;
+</script>
+</body>
+</html>
